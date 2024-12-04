@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with gradient -->
+    <rect width="800" height="400" fill="url(#gradient)"/>
+    
+    <!-- Music note icon -->
+    <path d="M400 100C460 100 500 140 500 200C500 260 460 300 400 300C340 300 300 260 300 200C300 140 340 100 400 100ZM380 170V230C380 240 370 250 360 250C350 250 340 240 340 230C340 220 350 210 360 210C365 210 370 212 375 215V170L420 160V220C420 230 410 240 400 240C390 240 380 230 380 220C380 210 390 200 400 200C405 200 410 202 415 205V150L380 170Z" fill="white"/>
+    
+    <!-- Project status text -->
+    <text x="400" y="350" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24">
+        Music Streaming App (In Development)
+    </text>
+    
+    <!-- Gradient definition -->
+    <defs>
+        <linearGradient id="gradient" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" style="stop-color:#1DB954"/>
+            <stop offset="100%" style="stop-color:#191414"/>
+        </linearGradient>
+    </defs>
+</svg>

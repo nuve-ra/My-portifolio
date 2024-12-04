@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nupoor Verma - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("JHW3bDrwI-alXj8DG");
+            console.log('EmailJS initialized successfully');
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Nupoor Verma</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="my-portfolio/nupoor.jpg" alt="Nupoor Verma" class="profile-image">
+            </div>
+            <h1>Hi, I'm Nupoor Verma</h1>
+            <div class="typing-text-container">
+                <div class="typing-text">Developer | Creator | Innovator</div>
+            </div>
+            <div class="cta-buttons">
+                <a href="projects.html" class="btn primary">
+                    <span>View My Work</span>
+                    <div class="wave"></div>
+                </a>
+                <a href="Nupoor.-.Verma.pdf" class="btn secondary" download>
+                    <span><i class="fas fa-download"></i> Download Resume</span>
+                    <div class="wave"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate developer with a keen interest in creating meaningful and impactful solutions. With a strong foundation in web development, I strive to write clean, efficient, and maintainable code.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-aos="fade-up">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-aos="fade-up">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-server"></i>
+                            <span>MongoDB</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-aos="fade-up">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-cloud"></i>
+                            <span>AWS</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-terminal"></i>
+                            <span>CI/CD</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- Project cards will be added here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:nv552110@gmail.com" class="contact-detail">
+                            nv552110@gmail.com
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:+918102063955" class="contact-detail">
+                            +91 8102063955
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p class="contact-detail">India</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" action="https://formsubmit.co/nv552110@gmail.com" method="POST">
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none">
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Success Page -->
+                        <input type="hidden" name="_next" value="https://nupoor-verma.github.io/portfolio/success.html">
+                        <!-- Subject -->
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="form-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="form-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="form-border"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/nuve-ra" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/nupoor-verma-578696267" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/@Nupur18330088" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Nupoor Verma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Click again to view the page!</div>
+
+    <!-- Scripts -->
+    <script>
+        // Toast notification functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const toast = document.getElementById('toast');
+            
+            navLinks.forEach(link => {
+                let clickCount = 0;
+                
+                link.addEventListener('click', function(e) {
+                    clickCount++;
+                    
+                    if (clickCount === 1) {
+                        e.preventDefault();
+                        
+                        // Show toast
+                        toast.classList.add('show');
+                        
+                        // Hide toast after 2 seconds
+                        setTimeout(() => {
+                            toast.classList.add('hide');
+                            setTimeout(() => {
+                                toast.classList.remove('show', 'hide');
+                            }, 300);
+                        }, 2000);
+                        
+                        // Reset click count after 3 seconds
+                        setTimeout(() => {
+                            clickCount = 0;
+                        }, 3000);
+                    }
+                });
+            });
+
+            // Hamburger menu functionality
+            const hamburger = document.querySelector('.hamburger');
+            if (hamburger) {
+                hamburger.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    document.querySelector('.nav-links').classList.toggle('active');
+                });
+            }
+        });
+
+        // AOS initialization
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="script.js"></script>
+    <script>
+        // Verify EmailJS is loaded
+        window.onload = function() {
+            console.log('EmailJS Status:', !!window.emailjs);
+            if (window.emailjs) {
+                console.log('EmailJS initialized with public key');
+            } else {
+                console.error('EmailJS not loaded!');
+            }
+        }
+    </script>
+</body>
+</html>

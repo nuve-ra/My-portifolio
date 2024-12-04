@@ -1,0 +1,233 @@
+/* Modern Skills Page Styling */
+.skills-page {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.skills-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.skills-header h1 {
+    font-size: 3.2rem;
+    color: #2d3436;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+}
+
+.skills-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    border-radius: 2px;
+    animation: lineGrow 1s ease forwards;
+}
+
+@keyframes lineGrow {
+    to {
+        width: 100%;
+    }
+}
+
+.skills-header p {
+    color: #636e72;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.skill-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.skill-section:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 123, 255, 0.15);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 123, 255, 0.1);
+}
+
+.skill-header h2 {
+    font-size: 2rem;
+    background: linear-gradient(45deg, #2d3436, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.skill-header i {
+    font-size: 2.2rem;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-bar {
+    margin: 25px 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.skill-bar:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-info i {
+    font-size: 1.6rem;
+    margin-right: 15px;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-info span {
+    font-size: 1.1rem;
+    color: #2d3436;
+    font-weight: 500;
+}
+
+.progress-line {
+    border-radius: 10px;
+    height: 12px;
+    background: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress-line span {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    width: 0;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    animation: progress 1.5s ease forwards;
+}
+
+@keyframes progress {
+    100% {
+        width: var(--progress, 50%);
+    }
+}
+
+.skill-section:nth-child(1) { animation-delay: 0.2s; }
+.skill-section:nth-child(2) { animation-delay: 0.4s; }
+.skill-section:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.skill-section {
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #007bff, #00c6ff);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #0056b3, #0098ff);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-page {
+        padding: 60px 15px;
+    }
+
+    .skills-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .skill-section {
+        padding: 25px;
+    }
+
+    .skill-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .skill-bar {
+        padding: 15px;
+    }
+}
