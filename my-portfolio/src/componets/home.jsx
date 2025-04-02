@@ -11,7 +11,7 @@ function Home() {
             <p>I'm a passionate Web Developer, eager to create innovative web applications.</p>
             <div className="cta-buttons">
               <a href="#about" className="btn">Learn More</a>
-              <a href="/Nupoor.V_Resume" className="btn">Download Resume</a>
+              <a href="/Nupoor.V_Resume.pdf" className="btn">Download Resume</a>
             </div>
           </div>
           <div className="hero-image">
